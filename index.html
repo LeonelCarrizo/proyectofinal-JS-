@@ -4,139 +4,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/miestilo.css">
-    <link rel="icon" type="image/png" href="imagenes/icono.png">
     <title>indumentaria-lc</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    
+
 </head>
 <body>
 
-  <!-- Pantalla Servicio solicitado -->
-  <div class="ventana" id="vent">
-  </div>
+ 
 
-  <!--------------------------------------HEADER-------------------------------------->
   <header>
-    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-      <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-          <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#formulario">Solicitar prenda</a>
-              </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+   
   </header>
   
   <!--------------------------------------INICIO-------------------------------------->
 
+  
       <div class="row text-center" id="inicio">
-          <h1>Hombre</h1><br>
-          <div class="conteiner" id="texto1">
-              <section class="conteiner">
-              <article class="col-xs-12 col-md-12">
-                  <p>
-                    Elegi tu prenda y nosotros te  la enviamos!!
-                  </p>
-                    </article>
-                </section>
-          </div>
+          <h1>Bienvenido a nuestra tienda!!</h1><br>
+          
       </div>
-          <div class="imghombre" id="imgh">
-            <h4>600</h4>
-            <img src="imagenes/remerahombre.jpg"  alt="...">
-            <h4>1900</h4>
-            <img src="imagenes/zapatillahombre.jpg"  alt="...">
-            <h4>1200</h4>
-            <img src="imagenes/jeanhombre.jpg"  alt="...">
+  <!--------------------------------------CARRITO-------------------------------------->
+
+
+  
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+       
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">Productos</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+      
+          
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Jean</h5>
+              <img src="./imgs/jeanhombre.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">no te pierdas el nuevo lanzamiento.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Remera</h5>
+              <img src="./imgs/remerahombre.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">remera de hombre para utilizar en todo tipo de salida.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 300</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Zapatilla</h5>
+              <img src="./imgs/zapatillahombre.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Comodas y confortables.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Jean</h5>
+              <img src="./imgs/jeanmujer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Jean mom para que lo disfrutes en cualquier situacion.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Remera</h5>
+              <img src="./imgs/remeramujer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">les presento la remera divina.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 300</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Zapatilla</h5>
+              <img src="./imgs/zapatillamujer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">sencillas y comodas.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
           </div>
 
-  <!--------------------------------------QUIENES SOMOS-------------------------------------->
 
-      <div class="container-fluid" id="Mujer">
-      <h2 class="text-center" id="titulo2">Mujer</h2>
-      <div class="conteiner imagen_quienesSomos">
-        <h4>500</h4>
-        <img src="imagenes/remeramujer.jpg" id="imagen2" class="img" alt="...">
-        <h4>1950</h4>
-        <img src="imagenes/zapatillamujer.jpg" id="imagen2" class="img" alt="...">
-        <h4>1300</h4>
-        <img src="imagenes/jeanmujer.jpg" id="imagen2" class="img" alt="...">
+        </div>
+
       </div>
-      <div id="texto2">
-        <p class="conteiner text-center">
-            <b>Elegi tu prenda y nosotros nos encargamos de enviartela 
-            </b>
-        </p>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success" id="btnComprar">COMPRAR</button>
+        </div>
+      </div>
+      
       </div>
     </div>
 
-    <!--------------------------------------FORMULARIO-------------------------------------->
 
-    <form class="container sm-4 md-4 text-center" name="formulario" id="formulario">
-      <h3 class="text-center">Solicita tu prenda</h3>
-        <div class="text-center">
-            <label for="validationDefault01" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" required>
-        </div>
-        <div class="align-content-center">
-            <label for="validationDefault02" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" required>
-        </div>
-      
-        <div class="align-content-center">
-            <label class="form-label">Email</label>
-            <div class="input-group"><input type="email" class="form-control" id="email" required>
-            </div>
-        </div>
-        
-        <div class="conteiner text-center vehiculo">
-        <select name="" id="ubicacion">
-            <option value="Caba">Caba</option>
-            <option value="Provincia">Mas lejos</option>
-        </select>
-        <select name="" id="prenda">
-            <option value="remera">remera</option>
-            <option value="jean">jean</option>
-            <option value="zapatilla">zapatilla</option>
-        </select>
-        </div>
-            <input type="number" name="numero" min="20" max="2000" id="numero"> Ingrese el codigo que se encuentra a la izquierda de la prenda que desea!
-        <div class="col-12" id="boton_servicio">
-          <button class="btn btn-primary" id="submit" type="submit">Solicitar prenda</button>
-        </div>
-    </form>
-  <div">
-      <div class="conteiner text-center" d="contenedor">
-        <div id="datos">  
-        </div>
-      </div>
-  
-  <!--------------------------------------ULTIMA SOLICITUD-------------------------------------->
+ 
 
-      <h3 class="conteiner text-center" id="solicitud" >Tu ultima solicitud</h3>
-      <table class="table text-center">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Costo</th>
-            <th>Tiempo de espera</th>
-          </tr>
-        </thead>
-        <tbody id="table">
-
-        </tbody>
-      </table>
 
   <!--------------------------------------FOOTER SECTION-------------------------------------->   
       
@@ -147,12 +229,21 @@
 		<li><a href="http://instagram.com">Instagram</a></li>
 		<li><a href="contactar.html">Twitter</a></li>
 	</ul>
-  <div class="conteiner" id="footer__p">
-              
-  </div>
+  
   </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/miestilo.css">
+    
+    <script src="js/js.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="css/miestilo.css">
 </body>
 </html>
