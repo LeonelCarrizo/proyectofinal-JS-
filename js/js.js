@@ -78,7 +78,7 @@ function renderCarrito(){
     tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
   })
   CarritoTotal()
-  imprimir()
+  
 }
 
 function CarritoTotal(){
